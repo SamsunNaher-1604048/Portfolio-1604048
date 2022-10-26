@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React, { useState } from "react"
+import { Link } from "react-scroll";
 
 const Navs = () => {
   const links = [
-    { name:"Home", Link:"/"},
+    { name: "Home", Link: "/" },
     { name: "About Me", Link: "/Qualification" },
     { name: "Projects", Link: "/project" },
     { name: "Skills", Link: "/skill" },
@@ -12,17 +11,17 @@ const Navs = () => {
 
   const [Open, Setopen] = useState(false);
   return (
-    <div className="shadow-md shadow-red-600 px-7 pt-5 md:py-4 ">
-      <Navbar className=" flex flex-col md:flex md:flex-row md:justify-between ">
+    <div className="shadow-md shadow-red-600 px-10 pt-5 md:py-4  ">
+      <nav className=" flex flex-col md:flex md:flex-row md:justify-between  ">
         <div className="flex justify-between">
-          <Nav.Link className="text-2xl font-bold md:text-3xl">
-            <div className="flex">
+ 
+            <div className="flex text-4xl font-bold ">
               <p className="text-red-600 ">S</p>amsun Naher
             </div>
-          </Nav.Link>
+          
           <button
             onClick={() => Setopen(!Open)}
-            className="md:hidden lg:hidden"
+            className="lg:hidden md:hidden"
           >
             {!Open ? "Show More" : "Show Less"}
           </button>
@@ -30,23 +29,25 @@ const Navs = () => {
         <div
           className={`flex ${
             Open ? "flex-col text-xl p" : "invisible"
-          } md:flex-row md:visible md:space-x-7 md:text-xl lg:text-2xl`}
+          } md:flex-row md:visible md:space-x-7 text-2xl`}
         >
           {links.map((link) => {
             return (
               <div key={link.name}>
-                <Nav
-                  className={`${Open ? "py-1 pb-2" : "invisible"} md:visible`}
+                <div
+                  className={`${Open ? "py-1 pb-2" : "invisible"} lg:visible md:visible`}
                 >
-                  <Nav.Link href={link.Link} className=" hover:text-red-600  ">
-                    <p className="transform hover:scale-110 duration-300 font-mono">{link.name}</p>
-                  </Nav.Link>
-                </Nav>
+                  <Link to={link.Link} smooth={true} duration={500}  offset={-125} className=" hover:text-red-600  ">
+                    <p className="transform hover:scale-110 duration-300 font-mono cursor-pointer">
+                      {link.name}
+                    </p>
+                  </Link>
+                </div>
               </div>
             );
           })}
         </div>
-      </Navbar>
+      </nav>
     </div>
   );
 };

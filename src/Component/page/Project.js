@@ -65,11 +65,11 @@ const Project = () => {
   ];
 
   return (
-    <div className="m-10">
+    <div className="m-10 " id="/project">
       <p className="text-center text-4xl text-red-600 transform hover:scale-110 duration-300 cursor-pointer">My Project</p>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 mt-10 ">
         {projects.map((project) => {
-          return <div key={project.name} className=' p-3 overflow-hidden shadow-lg h-72 cursor-pointer hover:shadow-red-600 border border-red-600 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-red-200 to-red-600 hover:text-white'>
+          return <div key={project.name} className=' p-10 overflow-hidden shadow-lg h-64 cursor-pointer hover:shadow-red-600 border border-red-600 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-red-200 to-red-600 hover:text-white'>
             <p className="text-3xl text-center ">{project.name}</p>
             <p className="text-xl text-center mt-4">{project.des}</p>
             <p className='font-mono text-center mt-4'>{project.tech}</p>

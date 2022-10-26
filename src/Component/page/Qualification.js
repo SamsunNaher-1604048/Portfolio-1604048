@@ -22,7 +22,7 @@ const Qualification = () => {
   ];
 
   return (
-    <div className="flex flex-col  mt-5 lg:m-12 lg:flex-row">
+    <div className="flex flex-col  mt-5 lg:m-12 lg:flex-row" id="/Qualification">
       <div className="lg:w-5/6 lg:flex lg:flex-col lg:items-center mb-8">
         <p className="text-center text-3xl text-red-600 md:text-4xl ">
           About Me

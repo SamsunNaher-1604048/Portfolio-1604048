@@ -61,7 +61,7 @@ const Skill = () => {
   ];
   return (
     <div className=" mt-16" id="/skill">
-      <p className=" mb-6 text-center text-4xl transform hover:scale-110 duration-300 cursor-pointer text-cyan-700">
+      <p className=" mb-6 text-center lg:text-4xl text-5xl transform hover:scale-110 duration-300 cursor-pointer text-cyan-700">
         My Skills
       </p>
       <div className="grid  gap-12 grid-cols-3 lg:grid-cols-6 m-3 p-10 border border-cyan-700 rounded-lg  ">
@@ -73,7 +73,7 @@ const Skill = () => {
             >
               <div className="flex flex-col items-center">
                 <img alt="" src={skill.name} className="h-20 w-20" />
-                <p >{skill.N}</p>
+                <p className="text-xl">{skill.N}</p>
               </div>
             </div>
           );

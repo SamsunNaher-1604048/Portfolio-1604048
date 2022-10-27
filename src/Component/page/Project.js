@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const Project = () => {
   const projects = [
     {
-      name: "Note taking app using react native",
+      name: "Note taking app ",
       des: "I built a note taking app by using react native.I used multiple Hooks, prop drilling and AsyncStorage for store data.",
       tech: "React Native",
       link: "https://github.com/SamsunNaher-1604048/project",
@@ -35,7 +35,7 @@ const Project = () => {
     },
     {
       name: "Hall management project",
-      des: "This project is made for both student and hall office.Funclitiy are add student search student and see hall notic",
+      des: "This project is made for both student and hall office.",
       tech: "HTML CSS MySql PHP",
       link: "",
     },
@@ -79,7 +79,7 @@ const Project = () => {
 
   return (
     <div className="m-10 " id="/project">
-      <p className="text-center text-4xl text-white transform hover:scale-110 duration-300 cursor-pointer bg-gradient-to-br from-cyan-300 to-cyan-700 pt-6 pb-6 rounded-lg">
+      <p className="text-center text-5xl lg:text-4xl text-white transform hover:scale-110 duration-300 cursor-pointer bg-gradient-to-br from-cyan-300 to-cyan-700 pt-6 pb-6 rounded-lg">
         My Project
       </p>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 mt-10 ">
@@ -88,11 +88,11 @@ const Project = () => {
             return (
               <div
                 key={project.name}
-                className=" p-4 overflow-hidden shadow-lg h-80 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
+                className=" p-3 overflow-hidden shadow-lg h-72 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
               >
-                <p className="text-3xl text-center ">{project.name}</p>
-                <p className="text-xl text-center mt-4">{project.des}</p>
-                <p className="font-mono text-center mt-4">{project.tech}</p>
+                <p className="lg:text-3xl text-4xl text-center ">{project.name}</p>
+                <p className="lg:text-xl text-2xl text-center mt-4">{project.des}</p>
+                <p className="font-mono text-center mt-4 text-xl">{project.tech}</p>
                 <div className="text-center">
                   <a href={project.link}>
                     <GitHubIcon />
@@ -104,11 +104,11 @@ const Project = () => {
             return (
               <div
                 key={project.name}
-                className=" p-5 overflow-hidden shadow-lg h-80 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
+                className=" p-3 overflow-hidden shadow-lg h-72 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
               >
-                <p className="text-3xl text-center ">{project.name}</p>
-                <p className="text-xl text-center mt-4">{project.des}</p>
-                <p className="font-mono text-center mt-4">{project.tech}</p>
+                <p className="lg:text-3xl text-4xl text-center ">{project.name}</p>
+                <p className="lg:text-xl text-2xl text-center mt-4">{project.des}</p>
+                <p className="font-mono text-center mt-4 text-xl">{project.tech}</p>
               </div>
             );
           }

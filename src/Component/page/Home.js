@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 
 const Home = () => {
+  const [subtitle,Setsubtitle]=useState("")
+  const [Data,SubData]=useState("")
+  const title="A Fontend Web Developer"
+  useEffect(()=>{
+      setTimeout(()=>{Setsubtitle(title.slice(0,subtitle.length+1))},300)
+      SubData(subtitle+"|")
+      console.log(Data)
+       
+
+  },[subtitle,Data])
   return (
     <div className="pt-4 mb-16 flex flex-col-reverse items-center lg:flex-row lg:justify-between " id="/">
       <div className="flex flex-col  items-center pt-3 lg:pl-20 cursor-pointer ransform hover:scale-105 duration-300 ">
         <div className=" text-cyan-700 text-4xl mb-2 ">Hello I am,</div>
         <div className="  font-bold text-5xl text-center ">SAMSUN NAHER</div>
-        <div className=" font-mono text-cyan-700  text-2xl text-center">
-          A Fontend Wed Developer
+        <div className=" font-mono text-cyan-700  text-3xl text-center blink-cursor">
+         {Data}
         </div>
         
       </div>

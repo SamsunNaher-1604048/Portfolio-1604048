@@ -5,9 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'hero': "url('../public/paper-textured-background.jpg')",
-      },
+      
     },
   },
   plugins: [],

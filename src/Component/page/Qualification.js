@@ -26,7 +26,7 @@ const Qualification = () => {
 
   return (
     <div
-      className="flex flex-col  m-4 rounded-lg  pt-6 lg:p-10 lg:flex-row bg-gradient-to-bl from-cyan-300 to-cyan-800"
+      className="flex flex-col  mt-7  mb-4 ml-4 mr-4 rounded-lg  pt-6 lg:p-10 lg:flex-row bg-gradient-to-bl from-cyan-300 to-cyan-800"
       id="/Qualification"
     >
       <div className="lg:w-5/6 lg:flex lg:flex-col lg:items-center mb-8">

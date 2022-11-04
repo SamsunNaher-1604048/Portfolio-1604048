@@ -29,7 +29,12 @@ const Qualification = () => {
       className="flex flex-col  mt-7  mb-4 ml-4 mr-4 rounded-lg  pt-6 lg:p-10 lg:flex-row bg-gradient-to-bl from-cyan-300 to-cyan-800"
       id="/Qualification"
     >
-      <div className="lg:w-5/6 lg:flex lg:flex-col lg:items-center mb-8">
+      <div
+        className="lg:w-5/6 lg:flex lg:flex-col lg:items-center mb-8"
+        data-aos="fade-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
         <p className="text-center text-white text-5xl lg:text-4xl ">Who I am</p>
         <p className=" rounded-xl cursor-pointer text-center lg:text-xl text-2xl m-7 p-4 transform hover:scale-105 duration-300 border text-white">
           <p className="lg:text-2xl text-3xl mb-4">I am Samsun Naher</p>
@@ -39,7 +44,12 @@ const Qualification = () => {
           and I enjoy Software Development. I also enjoy solving problems.
         </p>
       </div>
-      <div className="mb-4 lg:w-11/12">
+      <div
+        className="mb-4 lg:w-11/12"
+        data-aos="fade-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+      >
         <p className="text-center text-cyan-700-600 lg:text-4xl text-5xl text-white">
           Qualification
         </p>

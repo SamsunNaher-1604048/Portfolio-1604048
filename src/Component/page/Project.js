@@ -87,12 +87,20 @@ const Project = () => {
           if (project.link.length !== 0) {
             return (
               <div
+                data-aos="zoom-out-up"
+                data-aos-duration="3000"
                 key={project.name}
                 className=" p-3 overflow-hidden shadow-lg h-72 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
               >
-                <p className="lg:text-3xl text-4xl text-center ">{project.name}</p>
-                <p className="lg:text-xl text-2xl text-center mt-4">{project.des}</p>
-                <p className="font-mono text-center mt-4 text-xl">{project.tech}</p>
+                <p className="lg:text-3xl text-4xl text-center ">
+                  {project.name}
+                </p>
+                <p className="lg:text-xl text-2xl text-center mt-4">
+                  {project.des}
+                </p>
+                <p className="font-mono text-center mt-4 text-xl">
+                  {project.tech}
+                </p>
                 <div className="text-center">
                   <a href={project.link}>
                     <GitHubIcon />
@@ -103,12 +111,20 @@ const Project = () => {
           } else {
             return (
               <div
+                data-aos="zoom-out-up"
+                data-aos-duration="3000"
                 key={project.name}
                 className=" p-3 overflow-hidden shadow-lg h-72 cursor-pointer hover:shadow-cyan-700 border border-cyan-700 transform hover:scale-110 duration-300 rounded-lg hover:bg-gradient-to-tl from-cyan-200 to-cyan-700 hover:text-white"
               >
-                <p className="lg:text-3xl text-4xl text-center ">{project.name}</p>
-                <p className="lg:text-xl text-2xl text-center mt-4">{project.des}</p>
-                <p className="font-mono text-center mt-4 text-xl">{project.tech}</p>
+                <p className="lg:text-3xl text-4xl text-center ">
+                  {project.name}
+                </p>
+                <p className="lg:text-xl text-2xl text-center mt-4">
+                  {project.des}
+                </p>
+                <p className="font-mono text-center mt-4 text-xl">
+                  {project.tech}
+                </p>
               </div>
             );
           }

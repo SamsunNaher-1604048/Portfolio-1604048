@@ -11,14 +11,14 @@ const Navs = () => {
 
   const [Open, Setopen] = useState(false);
   return (
-    <div className="shadow-md shadow-cyan-700 px-10 pt-5 md:py-4 sm:pt-20 ">
+    <div
+      className="shadow-md shadow-cyan-700 px-10 pt-5 md:py-4 sm:pt-20 "
+      data-aos="fade-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+    >
       <nav className=" flex flex-col lg:flex lg:flex-row lg:justify-between  ">
-        <div
-          className="flex  justify-between"
-          data-aos="fade-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="3000"
-        >
+        <div className="flex  justify-between">
           <Link
             to="/"
             smooth={true}
@@ -37,7 +37,6 @@ const Navs = () => {
           </button>
         </div>
         <div
-  
           className={`flex ${
             Open ? "flex-col text-xl" : "invisible"
           } lg:flex-row lg:visible lg:space-x-7 text-2xl`}

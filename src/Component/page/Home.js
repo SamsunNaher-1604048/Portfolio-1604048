@@ -7,25 +7,22 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       Setsubtitle(title.slice(0, subtitle.length + 1));
-    }, 300);
+    }, 400);
     SubData(subtitle + "|");
     if (subtitle === title) {
       Setsubtitle("");
       SubData("");
-      
     }
   }, [subtitle, Data]);
   return (
     <div
+      data-aos="fade-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
       className="pt-4 mb-16 flex flex-col-reverse items-center lg:flex-row lg:justify-between "
       id="/"
     >
-      <div
-        data-aos="fade-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-        className="flex flex-col  items-center pt-3 lg:pl-20 cursor-pointer ransform hover:scale-105 duration-300 "
-      >
+      <div className="flex flex-col  items-center pt-3 lg:pl-20 cursor-pointer ransform hover:scale-105 duration-300 ">
         <div className=" text-cyan-700 text-4xl mb-2 ">Hello I am,</div>
         <div className="  font-bold text-5xl text-center ">SAMSUN NAHER</div>
         <div className=" font-mono text-cyan-700  text-3xl text-center blink-cursor">

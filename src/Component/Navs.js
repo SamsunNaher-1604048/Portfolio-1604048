@@ -13,7 +13,7 @@ const Navs = () => {
   return (
     <div
       className="shadow-md shadow-cyan-700 px-10 pt-5 md:py-4 sm:pt-20 "
-      data-aos="fade-left"
+      data-aos="fade-right"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="3000"
     >

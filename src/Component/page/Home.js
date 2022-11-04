@@ -16,7 +16,7 @@ const Home = () => {
   }, [subtitle, Data]);
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-right"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="3000"
       className="pt-4 mb-16 flex flex-col-reverse items-center lg:flex-row lg:justify-between "
